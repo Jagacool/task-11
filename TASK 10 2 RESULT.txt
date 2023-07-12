@@ -1,0 +1,118 @@
+Design the below image using HTML & CSS.
+HTML
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .drop-cap {
+      font-size: 32px;
+      font-weight: bold;
+      color: black;
+      padding: 8px;
+      float: left;
+      line-height: 1;
+    }
+    
+    .text {
+      font-size: 16px;
+      color: black;
+      line-height: 1.4;
+    }
+    
+    .text-container {
+      background-color: skyblue;
+      padding: 10px;
+      width: 300px;
+      height: 200px;
+    }
+    
+    .drop-cap::first-letter {
+      font-size: 64px;
+      float: left;
+      margin-right: 8px;
+    }
+    
+    @media (max-width: 480px) {
+      .drop-cap {
+        font-size: 24px;
+      }
+      
+      .drop-cap::first-letter {
+        font-size: 48px;
+      }
+      
+      .text {
+        font-size: 14px;
+      }
+      
+      .text-container {
+        width: auto;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="text-container">
+    <div class="drop-cap">D</div>
+    <div class="text">
+      rop caps can be used to <br>
+      add emphasis to blocks <br>
+      of text but know they <br>
+      can affect readability.
+    </div>
+  </div>
+</body>
+</html>
+
+
+CSS
+
+.drop-cap {
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    padding: 8px;
+    float: left;
+    line-height: 1;
+  }
+  
+  .text {
+    font-size: 16px;
+    color: black;
+    line-height: 1.4;
+  }
+  
+  .text-container {
+    background-color: skyblue;
+    padding: 10px;
+    width: 300px;
+    height: 200px;
+  }
+  
+  .drop-cap::first-letter {
+    font-size: 64px;
+    float: left;
+    margin-right: 8px;
+  }
+  
+  @media (max-width: 480px) {
+    .drop-cap {
+      font-size: 24px;
+    }
+    
+    .drop-cap::first-letter {
+      font-size: 48px;
+    }
+    
+    .text {
+      font-size: 14px;
+    }
+    
+    .text-container {
+      width: auto;
+      height: auto;
+    }
+  }
+  
